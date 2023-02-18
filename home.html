@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+    <title>Candy Postres</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light color-navbar ">
+        <div class="container-fluid">
+            <a class="navbar-brand ti ms-1" href="#">Candy Postres</a>
+            
+            <div class="d-flex align-items-center">
+                <a class="icono" data-bs-toggle="modal" data-bs-target="#noti"><i class="bi bi-bell"></i></a>
+
+                <div class="dropdown me-sm-2 me-lg-3 "> <!-- checar -->
+                    <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-fill"></i>Nombre de usuario
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-in-right"></i>Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+
+        <div class="row mt-5 ">
+            <!-- Logo -->
+            <div class="col-md-12 col-lg-7">
+                <img src="img/Candy.png" alt="" class="img-fluid">
+            </div>
+
+            <!-- Botones -->
+            <div class="col-md-12 col-lg-4 mt-5">
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <a href="registrarProducto.php" class="botonNew">Registrar producto</a>
+                </div>
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <a href="#" class="botonNew">Registrar venta</a>
+
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+
+                    <a href="registrarP.php" class="botonNew">Registar pedido</a>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <a href="pedidos.php" class="botonNew">Consulta de pedidos</a>
+                </div>
+                
+            </div>
+        </div>
+        
+
+    </div>
+    <footer>
+        
+
+    </footer>
+
+    <!-- Notificacion-->
+    <div class="modal fade " id="noti" tabindex="-1" aria-labelledby="velasLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header color-navbar">
+                    <h5 class="modal-title" id="velasLabel">Notificación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body color-modal rounded-bottom">
+
+
+                    <div class="row mb-2 d-flex justify-content-center">
+
+                        <div class="col-10">
+                            <h4>Pasteles rezagados</h4>
+                        </div>
+
+                        <div class="col-10 mt-1">
+                            <div class="card" style="max-width: 40rem;">
+                                <div class="card-header text-white tarjeta-color-header">
+                                    <div class="row">
+                                        <div class="col-8">3 leches</div>
+                                        <div class="col-4 d-flex justify-content-end">Grande</div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-black tarjeta-color-body">
+
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <p class="card-text">Entró: Lunes</p>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end">
+                                            <p class="card-text">05/02/2023</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <p class="card-text">Precio</p>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center pt-4">
+                        <button type="button" class="btn-blue-boton btn-color-azul" data-bs-dismiss="modal">Aceptar</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Registrar pastel-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header color-navbar">
+                    <h5 class="modal-title" id="exampleModalLabel">Registrar Pastel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body color-body">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Sabor</label>
+                            <input type="text" class="form-control borde" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Ejem. 3 leches</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Tamaño</label>
+                            <input type="number" class="form-control borde" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Precio</label>
+                            <input type="number" class="form-control borde" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Registrar</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Registrar Venta-->
+    <div class="modal fade" id="rVenta" tabindex="-1" aria-labelledby="rVentaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rVentaLabel">Registrar Venta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Sabor</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Ejem. 3 leches</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Tamaño</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Precio</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Registrar Venta</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Velas u otros-->
+    <div class="modal fade" id="velas" tabindex="-1" aria-labelledby="velasLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="velasLabel">Registrar Velas u otros</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <!-- <div id="emailHelp" class="form-text">Ejem. 3 leches</div> -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Registrar Velas u
+                            otros</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+
+</html>
