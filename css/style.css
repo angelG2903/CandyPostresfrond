@@ -146,9 +146,6 @@ body {
   background-image: linear-gradient(to right, #ffb88c, #e08282);
 }
 
-.color-body {
-  background-color: #f7f7f6;
-}
 
 .borde {
   border: 1px solid #000000;
@@ -351,7 +348,7 @@ tiene que tener el fondo transparente y sin borde
 
 /* Estilos para tablas de registro producto */
 .color-thead-p {
-  background-color: #b6b4b4;
+  background-color: #BDBDBD;
 }
 
 .color-border-b {
@@ -359,11 +356,34 @@ tiene que tener el fondo transparente y sin borde
 }
 
 .color-footer-b {
-  background-color: #b6b4b45e;
+  background-color: #bdbdbd60;
 }
 
 /* Estilos de botones editar y borrar registros */
 
+.f-icon-edit {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #1159EC;
+  border-radius: 5px;
+  font-size: 21px;
+}
+
+.f-icon-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: white;
+  background-color: #EB1F1F;
+  border-radius: 5px;
+  font-size: 21px;
+}
 
 footer {
   /* position: absolute;

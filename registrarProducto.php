@@ -30,8 +30,8 @@
             <div class="list-group list-group-flush ">
 
                 <!-- <a href="#" class="list-group-item list-group-item-action bg-transparent  active"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a> -->
-                <a href="#" class="list-group-item  fw-bold"><i class="fa-solid fa-cake-candles me-2"></i>Registrar Pastel</a>
-                <a href="#" class="list-group-item  fw-bold"><i class="bi bi-plus-circle-fill me-2"></i>Registrar Velitas</a>
+                <a class="list-group-item  fw-bold" data-bs-toggle="modal" data-bs-target="#registrarP"><i class="fa-solid fa-cake-candles me-2"></i>Registrar Pastel</a>
+                <a class="list-group-item  fw-bold" data-bs-toggle="modal" data-bs-target="#vela"><i class="bi bi-plus-circle-fill me-2"></i>Registrar Velitas</a>
 
                 <!-- <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i class="fas fa-power-off me-2"></i>Logout</a> -->
             </div>
@@ -55,10 +55,10 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-user me-2"></i>Nombre de usuario
+                                    <i class="fas fa-user me-2"></i>Angel
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Inicio</a></li>
+                                    <li><a class="dropdown-item" href="home.html">Inicio</a></li>
                                     <li><a class="dropdown-item" href="#">Settings</a></li>
                                     <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
                                 </ul>
@@ -71,11 +71,11 @@
 
             </nav>
             <!-- Contenido de la pagina -->
-            <div class="container-fluid">
+            <div class="container">
 
-            <!-- Tabla de los pasteles -->
+                <!-- Tabla de los pasteles d-flex justify-content-center-->
                 <div class="row mt-5 d-flex justify-content-center">
-                    <div class="col-10">
+                    <div class="col-sm-12 col-lg-10 table-responsive-sm">
 
                         <table class="table table-borderless">
                             <thead class="color-thead-p">
@@ -87,7 +87,6 @@
                                     <th scope="col">Etiqueta</th>
                                     <th scope="col">Precio</th>
                                     <th scope="col"></th>
-                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -98,8 +97,13 @@
                                     <td>05/02/2023</td>
                                     <td>Lunes</td>
                                     <td>320</td>
-                                    <td><i class="bi bi-pencil"></i></td>
-                                    <td><i class="bi bi-trash"></i></td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="f-icon-edit mx-2"><i class="bi bi-pencil"></i></div>
+                                            <div class="f-icon-delete"><i class="bi bi-trash"></i></div>
+
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr class="color-border-b">
                                     <th scope="row">2</th>
@@ -108,12 +112,18 @@
                                     <td>05/02/2023</td>
                                     <td>Martes</td>
                                     <td>300</td>
-                                    <td><i class="bi bi-pencil" style="background-color: red; color: white;"></i></td>
-                                    <td><i class="bi bi-trash"></i></td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="f-icon-edit mx-2"><i class="bi bi-pencil"></i></div>
+                                            <div class="f-icon-delete"><i class="bi bi-trash"></i></div>
+
+                                        </div>
+                                    </td>
+
                                 </tr>
                                 <tr class="color-footer-b">
                                     <th scope="row" colspan="5">Total</th>
-                                    <td colspan="3">620</td>
+                                    <td colspan="2" class="fw-bold">620</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -121,35 +131,47 @@
                     </div>
                 </div>
 
-                <div class="row  mt-5 d-flex justify-content-center">
-                    <div class="col-8">
+                <!-- Tabla velitas -->
+                <div class="row  mt-5 d-flex justify-content-center table-responsive-sm">
+                    <div class="col-sm-12 col-md-7 col-lg-5">
 
-                        <table class="table">
-                            <thead>
+                        <table class="table table-borderless">
+                            <thead class="color-thead-p">
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr class="color-border-b">
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>Velita Número</td>
+                                    <td>20</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="f-icon-edit mx-2"><i class="bi bi-pencil"></i></div>
+                                            <div class="f-icon-delete"><i class="bi bi-trash"></i></div>
+
+                                        </div>
+                                    </td>
                                 </tr>
-                                <tr>
+                                <tr class="color-border-b">
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>Vela Magi</td>
+                                    <td>15</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="f-icon-edit mx-2"><i class="bi bi-pencil"></i></div>
+                                            <div class="f-icon-delete"><i class="bi bi-trash"></i></div>
+
+                                        </div>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
+                                <tr class="color-footer-b">
+                                    <th scope="row" colspan="2">Total</th>
+                                    <td colspan="2" class="fw-bold">35</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -205,7 +227,7 @@
 
 
             </div> -->
-            
+
         </div>
 
 
@@ -213,6 +235,106 @@
     <!-- /#page-content-wrapper -->
     <!-- </div> -->
     <footer></footer>
+
+
+    <!-- Modal Registrar pastel-->
+    <div class="modal fade" id="registrarP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: transparent;border: none;">
+                <div class="modal-header color-navbar br-modal-top">
+                    <h5 class="modal-title" id="exampleModalLabel">Registrar Pastel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body color-modal br-modal-bot">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Sabor</label>
+                            <select class="form-select borde" aria-label="Default select example" id="sabor" required>
+                                <option selected>Seleccione un sabor</option>
+                                <option value="1">3 leches</option>
+                                <option value="2">Combinado</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Tamaño</label>
+                            <select class="form-select borde" aria-label="Default select example" id="tama" required>
+                                <option selected>Seleccione un tamaño</option>
+                                <option value="1">Grande</option>
+                                <option value="2">Mediano</option>
+                                <option value="3">Chico</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tamano" class="form-label">Etiqueta</label>
+                            <select class="form-select borde" aria-label="Default select example" id="etiqueta" required>
+                                <option selected>Seleccione la etiqueta</option>
+                                <option value="1">Lunes</option>
+                                <option value="2">Martes</option>
+                                <option value="3">Miercoles</option>
+                                <option value="4">Jueves</option>
+                                <option value="5">Viernes</option>
+                                <option value="6">Sabado</option>
+                                <option value="7">Domingo</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Precio</label>
+                            <input type="number" class="form-control borde" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control borde" id="exampleInputPassword1">
+                        </div>
+                        <div class="d-flex justify-content-end mt-5 mb-2">
+                            <button type="button" class="btn-blue-boton btn-color-rojo me-3" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn-blue-boton btn-color-azul px-3 me-1" data-bs-dismiss="modal">Registrar</button>
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Velas u otros-->
+    <div class="modal fade" id="vela" tabindex="-1" aria-labelledby="velasLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: transparent;border: none;">
+                <div class="modal-header color-navbar br-modal-top">
+                    <h5 class="modal-title" id="velasLabel">Registrar Velitas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body color-modal br-modal-bot">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                            <select class="form-select borde" aria-label="Default select example" id="nombre" required>
+                                <option selected>Seleccione una opción</option>
+                                <option value="1">Vela número</option>
+                                <option value="2">Vela Magi</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        
+                        <div class="d-flex justify-content-end mt-4 mb-2">
+                            <button type="button" class="btn-blue-boton btn-color-rojo me-3" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn-blue-boton btn-color-azul px-3 me-1" data-bs-dismiss="modal">Registrar</button>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
