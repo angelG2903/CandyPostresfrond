@@ -55,7 +55,7 @@
 
                     <!-- Sabor id: sabor -->
                     <div class="mb-3">
-
+                        <label for="sabor" class="form-label">Sabor</label>
                         <select class="form-select borde" aria-label="Default select example" id="sabor" required>
                             <option selected>Seleccione un sabor</option>
                             <option value="1">3 leches</option>

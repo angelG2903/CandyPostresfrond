@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 
-    <title>Registrar Producto</title>
+    <title>Registrar Venta</title>
 </head>
 
 <body>
@@ -28,12 +28,8 @@
                 <p class="fs-3 my-2 ti">Opciones</p>
             </div>
             <div class="list-group list-group-flush mt-3">
-
-                <!-- <a href="#" class="list-group-item list-group-item-action bg-transparent  active"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a> -->
-                <a class="list-group-item  fw-bold" data-bs-toggle="modal" data-bs-target="#registrarP"><i class="fa-solid fa-cake-candles me-2"></i>Registrar Pastel</a>
-                <a class="list-group-item  fw-bold mt-2" data-bs-toggle="modal" data-bs-target="#vela"><i class="bi bi-plus-circle-fill me-2"></i>Registrar Velitas</a>
-
-                <!-- <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i class="fas fa-power-off me-2"></i>Logout</a> -->
+                <a class="list-group-item  fw-bold" data-bs-toggle="modal" data-bs-target="#registrarP"><i class="fa-solid fa-cake-candles me-2"></i>Venta Pastel</a>
+                <a class="list-group-item  fw-bold mt-2" data-bs-toggle="modal" data-bs-target="#vela"><i class="bi bi-plus-circle-fill me-2"></i>Venta Velitas</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -49,9 +45,6 @@
 
 
                     <div class="dropdown me-sm-2 me-lg-3 "> <!-- checar -->
-                        <!-- <a class="nav-link dropdown-toggle dropdown-color"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-person-fill me-2" style="color: black;"></i>Angel
-                        </a> -->
                         <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-person-fill"></i>Angel
                         </button>
@@ -62,25 +55,7 @@
                         </ul>
                     </div>
 
-                    <!-- <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-user me-2"></i>Angel
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="home.html">Inicio</a></li>
-                                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    </div> -->
                 </div>
 
 
@@ -91,7 +66,8 @@
                 <!-- Tabla de los pasteles d-flex justify-content-center-->
                 <div class="row mt-4 d-flex justify-content-center">
                     <div class="col-sm-12 col-lg-10 table-responsive-sm">
-                        <h5>Pasteles registrados</h5>
+
+                        <h5>Pasteles Vendidos</h5>
                         <table class="table table-borderless">
                             <thead class="color-thead-p">
                                 <tr>
@@ -150,7 +126,7 @@
                 <div class="row  mt-4 d-flex justify-content-center table-responsive-sm">
                     <div class="col-sm-12 col-md-7 col-lg-5">
 
-                        <h5>Velitas registradas</h5>
+                        <h5>Velas vendidas</h5>
                         <table class="table table-borderless">
                             <thead class="color-thead-p">
                                 <tr>
@@ -195,23 +171,32 @@
                     </div>
                 </div>
 
+                <div class="row d-flex justify-content-center mt-4 mb-5 mx-2">
+
+                    <div class="col-sm-12 col-lg-6 total-venta d-flex justify-content-between py-1">
+                        <h4 class="mb-0 ps-2">Total: 995</h4>
+                        <h4 class="mb-0 pe-2">04/02/2023</h4>
+                    </div>
+
+                </div>
+
             </div>
+
 
         </div>
 
 
     </div>
     <!-- /#page-content-wrapper -->
-    <!-- </div> -->
     <footer></footer>
 
 
-    <!-- Modal Registrar pastel-->
+    <!-- Modal Registrar venta  pastel-->
     <div class="modal fade" id="registrarP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content" style="background: transparent;border: none;">
                 <div class="modal-header color-navbar br-modal-top">
-                    <h5 class="modal-title" id="exampleModalLabel">Registrar Pastel</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Venta Pastel</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body color-modal br-modal-bot">
@@ -251,10 +236,6 @@
                             <label for="exampleInputPassword1" class="form-label">Precio</label>
                             <input type="number" class="form-control borde" id="exampleInputPassword1">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Cantidad</label>
-                            <input type="number" class="form-control borde" id="exampleInputPassword1">
-                        </div>
                         <div class="d-flex justify-content-end mt-5 mb-2">
                             <button type="button" class="btn-blue-boton btn-color-rojo me-3" data-bs-dismiss="modal">Cancelar</button>
                             <button type="submit" class="btn-blue-boton btn-color-azul px-3 me-1" data-bs-dismiss="modal">Registrar</button>
@@ -269,12 +250,12 @@
     </div>
 
 
-    <!-- Modal Velas u otros-->
+    <!-- Modal venta Velas -->
     <div class="modal fade" id="vela" tabindex="-1" aria-labelledby="velasLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content" style="background: transparent;border: none;">
                 <div class="modal-header color-navbar br-modal-top">
-                    <h5 class="modal-title" id="velasLabel">Registrar Velitas</h5>
+                    <h5 class="modal-title" id="velasLabel">Venta Velitas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body color-modal br-modal-bot">
@@ -287,10 +268,6 @@
                                 <option value="1">Vela número</option>
                                 <option value="2">Vela Magi</option>
                             </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Cantidad</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1">
                         </div>
 
                         <div class="d-flex justify-content-end mt-4 mb-2">
